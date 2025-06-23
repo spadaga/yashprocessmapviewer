@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEBAPP_NAME: yashprocessmapviewer # Matches your Azure App Service name
+  WEBAPP_NAME: yashprocessmapviewer
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x' # Use Node 20 LTS
+          node-version: '20.x'
       - name: Install dependencies
         run: npm install
       - name: Build Next.js app
